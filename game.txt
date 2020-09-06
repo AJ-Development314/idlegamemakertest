@@ -1,0 +1,45 @@
+/*
+  My Game for A School Website
+*/
+
+Let's make a game!
+  name: Pie Clicker
+  created: 06/09/2020
+  updated: 06/09/2020
+  version: 1.0.0
+  
+Settings
+  building cost increase: 120%
+  building cost refund: 15%
+  
+Resources
+  *pie
+    name: Pie
+    desc: Who knows what's inside?
+    
+Upgrades
+  *applePie
+    name: Apple Pie
+    desc: Now you can fill pies with delicious apples!
+    
+  *cherryPie
+    name: Cherry Pie
+    desc: Remove the big seed first. It's not good.
+    
+ Buildings
+  *wheatSeeds
+    name: Wheat Seeds
+    desc: Wheat for the pie shells
+    cost: 5 coins
+    on tick: give one wheat
+    
+ Layout
+  *resources
+    contains: Resources
+    header: Your resources
+   *buildings
+    contains: Buildings
+    header: Your buildings
+   *upgrades
+    contains: Upgrades
+    header: Your upgrades
